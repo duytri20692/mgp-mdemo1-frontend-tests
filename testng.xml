@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All test">
+    <test name="SmokeTest">
+        <classes>
+            <class name="com.mgp.mdemo1.frontend.tests.testng.runner.RunCucumberTest"></class>
+        </classes>
+    </test>
+</suite>

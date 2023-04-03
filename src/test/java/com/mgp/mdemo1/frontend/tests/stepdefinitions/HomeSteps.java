@@ -1,9 +1,8 @@
-package com.mgp.mobile.demo1.stepdefinitions;
+package com.mgp.mdemo1.frontend.tests.stepdefinitions;
 
-import com.mgp.mobile.demo1.pageobject.HomePage;
-import com.mgp.mobile.demo1.common.BasePage;
+import com.mgp.mdemo1.frontend.tests.pageobject.HomePage;
+import com.mgp.mdemo1.frontend.tests.common.BasePage;
 import io.cucumber.java.en.And;
-import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.testng.Assert;
 

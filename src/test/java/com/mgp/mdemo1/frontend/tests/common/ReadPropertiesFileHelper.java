@@ -1,4 +1,4 @@
-package com.mgp.mobile.demo1.common;
+package com.mgp.mdemo1.frontend.tests.common;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;

@@ -1,10 +1,9 @@
-package com.mgp.mobile.demo1.stepdefinitions;
+package com.mgp.mdemo1.frontend.tests.stepdefinitions;
 
-import com.mgp.mobile.demo1.pageobject.LoginPage;
-import com.mgp.mobile.demo1.common.BasePage;
+import com.mgp.mdemo1.frontend.tests.pageobject.LoginPage;
+import com.mgp.mdemo1.frontend.tests.common.BasePage;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
-import io.cucumber.java.en.When;
 
 public class LoginSteps extends BasePage {
     LoginPage loginPage = new LoginPage(driver);

@@ -1,12 +1,12 @@
-package com.mgp.mobile.demo1.testng.runner;
+package com.mgp.mdemo1.frontend.tests.testng.runner;
 
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
-        tags = "@MakeAPayment",
+        tags = "@SmokeTest or @RegressionTest or @UATTest",
         features = "classpath:features",
-        glue = {"com.mgp.mobile.demo1.common", "com.mgp.mobile.demo1.stepdefinitions", "com.mgp.mobile.demo1.testng.runner"},
+        glue = {"com.mgp.mdemo1.frontend.tests.common", "com.mgp.mdemo1.frontend.tests.stepdefinitions", "com.mgp.mdemo1.frontend.tests.testng.runner"},
         plugin = {"pretty", "json:target/cucumber-reports/cucumber.json", "html:target/cucumber-reports/cucumberreport.html"},
         monochrome = true
 )

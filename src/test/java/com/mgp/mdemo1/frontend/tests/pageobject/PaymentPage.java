@@ -1,10 +1,9 @@
-package com.mgp.mobile.demo1.pageobject;
+package com.mgp.mdemo1.frontend.tests.pageobject;
 
-import com.mgp.mobile.demo1.common.ElementHelper;
+import com.mgp.mdemo1.frontend.tests.common.ElementHelper;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.touch.offset.PointOption;
-import org.openqa.selenium.Point;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 

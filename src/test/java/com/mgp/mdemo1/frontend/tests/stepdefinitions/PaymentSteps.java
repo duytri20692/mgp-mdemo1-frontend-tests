@@ -1,7 +1,7 @@
-package com.mgp.mobile.demo1.stepdefinitions;
+package com.mgp.mdemo1.frontend.tests.stepdefinitions;
 
-import com.mgp.mobile.demo1.common.BasePage;
-import com.mgp.mobile.demo1.pageobject.PaymentPage;
+import com.mgp.mdemo1.frontend.tests.pageobject.PaymentPage;
+import com.mgp.mdemo1.frontend.tests.common.BasePage;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.And;
 

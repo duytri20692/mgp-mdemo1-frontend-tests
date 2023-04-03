@@ -1,4 +1,4 @@
-package com.mgp.mobile.demo1.common;
+package com.mgp.mdemo1.frontend.tests.common;
 
 import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.WebElement;
