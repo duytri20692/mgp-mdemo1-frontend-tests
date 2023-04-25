@@ -1,0 +1,36 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 36.415 sec <<< FAILURE!
+runScenario(com.mgp.mobile.demo1.testng.runner.RunCucumberTest)  Time elapsed: 34.429 sec  <<< FAILURE!
+org.openqa.selenium.StaleElementReferenceException: The element 'By.xpath: //*[contains(@text,'Your balance is')]' is not linked to the same object in DOM anymore
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.9.0', revision: 'd7057100a6'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [58d2c9a0-ed29-4832-8e8e-5a130c66f2e6, getElementText {id=00000000-0000-0017-0000-000700000014}]
+Capabilities {appium:app: D:\Mozaic\mgp-mdemo1-fronte..., appium:appPackage: com.experitest.ExperiBank, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: D:\Mozaic\mgp-mdemo1-fronte..., automationName: UIAutomator2, deviceName: emulator-5554, platformName: ANDROID, platformVersion: 12.0}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 560, appium:deviceScreenSize: 1440x2560, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 3.5, appium:platformVersion: 12, appium:statBarHeight: 84, appium:takesScreenshot: true, appium:viewportRect: {height: 2308, left: 0, top: 84, width: 1440}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Element: [[AndroidDriver:  on ANDROID (58d2c9a0-ed29-4832-8e8e-5a130c66f2e6)] -> xpath: //*[contains(@text,'Your balance is')]]
+Session ID: 58d2c9a0-ed29-4832-8e8e-5a130c66f2e6
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:207)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy24.getText(Unknown Source)
+	at com.mgp.mobile.demo1.pageobject.HomePage.getCurrentAmount(HomePage.java:33)
+	at com.mgp.mobile.demo1.stepdefinitions.HomeSteps.userShouldSeeTheCurrentPaymentAmountValueIs(HomeSteps.java:25)
+	at ?.User should see the current payment amount value is <80.00>(classpath:features/MakeAPayment.feature:17)
+

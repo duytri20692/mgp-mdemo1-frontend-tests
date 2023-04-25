@@ -12,7 +12,7 @@ public class Hooks extends BasePage{
     @Before
     public static void setupDriver() throws MalformedURLException {
         File appDir = new File(System.getProperty("user.dir") + "/apps");
-        File app = new File(appDir, "EriBank.apk");
+        File app = new File(appDir, "MozaicApp.apk");
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("platformName", "Android");
         capabilities.setCapability("platformVersion", "12.0");
@@ -24,6 +24,6 @@ public class Hooks extends BasePage{
 
     @After
     public static void quitDriver() throws Exception{
-        driver.quit();
+//        driver.quit();
     }
 }

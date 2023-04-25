@@ -1,0 +1,177 @@
+<html>
+<head>
+<title>TestNG:  Command line test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Command line test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>6/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Apr 21 11:12:50 ICT 2023</td>
+</tr>
+<tr><td>Total time:</td><td>35 seconds (35324 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.mgp.mobile.demo1.testng.runner.RunCucumberTest.runScenario()'><b>runScenario</b><br>Test class: com.mgp.mobile.demo1.testng.runner.RunCucumberTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user can make a payment after login to the system.", "Make a payment."</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: The element &apos;By.xpath: //*[contains(@text,&apos;Your balance is&apos;)]&apos; is not linked to the same object in DOM anymore
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [58d2c9a0-ed29-4832-8e8e-5a130c66f2e6, getElementText {id=00000000-0000-0017-0000-000700000014}]
+Capabilities {appium:app: D:\Mozaic\mgp-mdemo1-fronte..., appium:appPackage: com.experitest.ExperiBank, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: D:\Mozaic\mgp-mdemo1-fronte..., automationName: UIAutomator2, deviceName: emulator-5554, platformName: ANDROID, platformVersion: 12.0}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 560, appium:deviceScreenSize: 1440x2560, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 3.5, appium:platformVersion: 12, appium:statBarHeight: 84, appium:takesScreenshot: true, appium:viewportRect: {height: 2308, left: 0, top: 84, width: 1440}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Element: [[AndroidDriver:  on ANDROID (58d2c9a0-ed29-4832-8e8e-5a130c66f2e6)] -&gt; xpath: //*[contains(@text,&apos;Your balance is&apos;)]]
+Session ID: 58d2c9a0-ed29-4832-8e8e-5a130c66f2e6
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:207)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy24.getText(Unknown Source)
+	at com.mgp.mobile.demo1.pageobject.HomePage.getCurrentAmount(HomePage.java:33)
+	at com.mgp.mobile.demo1.stepdefinitions.HomeSteps.userShouldSeeTheCurrentPaymentAmountValueIs(HomeSteps.java:25)
+	at ?.User should see the current payment amount value is &lt;80.00&gt;(classpath:features/MakeAPayment.feature:17)
+... Removed 8 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace722764585", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace722764585'><pre>org.openqa.selenium.StaleElementReferenceException: The element &apos;By.xpath: //*[contains(@text,&apos;Your balance is&apos;)]&apos; is not linked to the same object in DOM anymore
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [58d2c9a0-ed29-4832-8e8e-5a130c66f2e6, getElementText {id=00000000-0000-0017-0000-000700000014}]
+Capabilities {appium:app: D:\Mozaic\mgp-mdemo1-fronte..., appium:appPackage: com.experitest.ExperiBank, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: D:\Mozaic\mgp-mdemo1-fronte..., automationName: UIAutomator2, deviceName: emulator-5554, platformName: ANDROID, platformVersion: 12.0}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 560, appium:deviceScreenSize: 1440x2560, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 3.5, appium:platformVersion: 12, appium:statBarHeight: 84, appium:takesScreenshot: true, appium:viewportRect: {height: 2308, left: 0, top: 84, width: 1440}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Element: [[AndroidDriver:  on ANDROID (58d2c9a0-ed29-4832-8e8e-5a130c66f2e6)] -&gt; xpath: //*[contains(@text,&apos;Your balance is&apos;)]]
+Session ID: 58d2c9a0-ed29-4832-8e8e-5a130c66f2e6
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:207)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy24.getText(Unknown Source)
+	at com.mgp.mobile.demo1.pageobject.HomePage.getCurrentAmount(HomePage.java:33)
+	at com.mgp.mobile.demo1.stepdefinitions.HomeSteps.userShouldSeeTheCurrentPaymentAmountValueIs(HomeSteps.java:25)
+	at ?.User should see the current payment amount value is &lt;80.00&gt;(classpath:features/MakeAPayment.feature:17)
+</pre></div></td>
+<td>34</td>
+<td>com.mgp.mobile.demo1.testng.runner.RunCucumberTest@26275bef</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.mgp.mdemo1.frontend.tests.testng.runner.RunCucumberTest.runScenario()'><b>runScenario</b><br>Test class: com.mgp.mdemo1.frontend.tests.testng.runner.RunCucumberTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "UAT Test demo testcase 2", "UAT Test demo testcase 2"</td>
+<td></td>
+<td>0</td>
+<td>com.mgp.mdemo1.frontend.tests.testng.runner.RunCucumberTest@6a370f4</td></tr>
+<tr>
+<td title='com.mgp.mdemo1.frontend.tests.testng.runner.RunCucumberTest.runScenario()'><b>runScenario</b><br>Test class: com.mgp.mdemo1.frontend.tests.testng.runner.RunCucumberTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Smoke Test demo testcase 1", "Smoke Test demo testcase 1"</td>
+<td></td>
+<td>0</td>
+<td>com.mgp.mdemo1.frontend.tests.testng.runner.RunCucumberTest@6a370f4</td></tr>
+<tr>
+<td title='com.mgp.mdemo1.frontend.tests.testng.runner.RunCucumberTest.runScenario()'><b>runScenario</b><br>Test class: com.mgp.mdemo1.frontend.tests.testng.runner.RunCucumberTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Regression Test demo testcase 1", "Regression Test demo testcase 1"</td>
+<td></td>
+<td>0</td>
+<td>com.mgp.mdemo1.frontend.tests.testng.runner.RunCucumberTest@6a370f4</td></tr>
+<tr>
+<td title='com.mgp.mdemo1.frontend.tests.testng.runner.RunCucumberTest.runScenario()'><b>runScenario</b><br>Test class: com.mgp.mdemo1.frontend.tests.testng.runner.RunCucumberTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Regression Test demo testcase 2", "Regression Test demo testcase 2"</td>
+<td></td>
+<td>0</td>
+<td>com.mgp.mdemo1.frontend.tests.testng.runner.RunCucumberTest@6a370f4</td></tr>
+<tr>
+<td title='com.mgp.mdemo1.frontend.tests.testng.runner.RunCucumberTest.runScenario()'><b>runScenario</b><br>Test class: com.mgp.mdemo1.frontend.tests.testng.runner.RunCucumberTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Smoke Test demo testcase 2", "Smoke Test demo testcase 2"</td>
+<td></td>
+<td>0</td>
+<td>com.mgp.mdemo1.frontend.tests.testng.runner.RunCucumberTest@6a370f4</td></tr>
+<tr>
+<td title='com.mgp.mdemo1.frontend.tests.testng.runner.RunCucumberTest.runScenario()'><b>runScenario</b><br>Test class: com.mgp.mdemo1.frontend.tests.testng.runner.RunCucumberTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "UAT Test demo testcase 1", "UAT Test demo testcase 1"</td>
+<td></td>
+<td>0</td>
+<td>com.mgp.mdemo1.frontend.tests.testng.runner.RunCucumberTest@6a370f4</td></tr>
+</table><p>
+</body>
+</html>
