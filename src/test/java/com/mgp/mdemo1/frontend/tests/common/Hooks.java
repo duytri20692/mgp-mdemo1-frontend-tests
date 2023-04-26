@@ -24,6 +24,6 @@ public class Hooks extends BasePage{
 
     @After
     public static void quitDriver() throws Exception{
-//        driver.quit();
+        driver.quit();
     }
 }

@@ -21,9 +21,5 @@ Feature: Submit an application.
     And User should see the Congratulations message as "Your rate of 3.8% is garanteed for 90 days, starting today!"
 
     Examples:
-      | House | Primary | Employed | SingleBuyer | consent | spend | downPayment | grossIncome | monthlyExpenses |
-      | Y     | Y       | Y        | Y           | Y       | 200000 | 3000        | 50000        | 1500             |
-#      | N              | N                | N                 | N                    |Y|
-#      | Y              | N                | Y                 | N                    |Y|
-#      | N              | N                | Y                 | Y                    |Y|
-
+      | House | Primary | Employed | SingleBuyer | consent | spend  | downPayment | grossIncome | monthlyExpenses |
+      | Y     | Y       | Y        | Y           | Y       | 200000 | 3000        | 50000       | 1500            |
