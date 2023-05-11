@@ -2,7 +2,7 @@
 Feature: Submit an application.
 
   Scenario Outline: Verify user can make a payment after login to the system.
-    Given User open the Mozaic application and go to the Mortgage Prequalification Request page
+    Given User go to the Prequalification page and select user as "<User>"
     When User select answers as "<House>", "<Primary>", "<Employed>" and "<SingleBuyer>"
     Then Click on the Next button
     And User click on Consent checkbox with value is "<consent>"
@@ -18,8 +18,8 @@ Feature: Submit an application.
     Then User should see the Summary Review Page
     When User click on the Submit button
     And User should see the Congratulations page
-    And User should see the Congratulations message as "Your rate of 3.8% is garanteed for 90 days, starting today!"
+    And User should see the Congratulations message as "You have qualified for our Mortgage Prequalification Program."
 
     Examples:
-      | House | Primary | Employed | SingleBuyer | consent | spend  | downPayment | grossIncome | monthlyExpenses |
-      | Y     | Y       | Y        | Y           | Y       | 200000 | 3000        | 50000       | 1500            |
+      | User       | House | Primary | Employed | SingleBuyer | consent | spend  | downPayment | grossIncome | monthlyExpenses |
+      | Test User5 | Y     | Y       | Y        | Y           | Y       | 500000 | 400000      | 80000       | 1500            |

@@ -1,141 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="6" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-21T11:12:50 ICT" name="Command line suite" finished-at="2023-04-21T11:13:25 ICT" duration-ms="35324">
+  <suite started-at="2023-05-10T18:03:18 ICT" name="com.mgp.mdemo1.frontend.tests.testng.runner.RunCucumberTest" finished-at="2023-05-10T18:04:00 ICT" duration-ms="41951">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.mgp.mdemo1.frontend.tests.testng.runner.RunCucumberTest@6a370f4]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.mgp.mobile.demo1.testng.runner.RunCucumberTest@26275bef]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.mgp.mdemo1.frontend.tests.testng.runner.RunCucumberTest@503d687a]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2023-04-21T11:12:50 ICT" name="Command line test" finished-at="2023-04-21T11:13:25 ICT" duration-ms="35324">
+    <test started-at="2023-05-10T18:03:18 ICT" name="Command line test" finished-at="2023-05-10T18:04:00 ICT" duration-ms="41951">
       <class name="com.mgp.mdemo1.frontend.tests.testng.runner.RunCucumberTest">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.mgp.mdemo1.frontend.tests.testng.runner.RunCucumberTest@6a370f4]" started-at="2023-04-21T11:12:50 ICT" name="setUpClass" finished-at="2023-04-21T11:12:50 ICT" duration-ms="639" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.mgp.mdemo1.frontend.tests.testng.runner.RunCucumberTest@503d687a]" started-at="2023-05-10T18:03:18 ICT" name="setUpClass" finished-at="2023-05-10T18:03:18 ICT" duration-ms="646" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@750a04ec]]>
+                <![CDATA[org.testng.TestRunner@2f80cb79]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.mgp.mdemo1.frontend.tests.testng.runner.RunCucumberTest@6a370f4]" started-at="2023-04-21T11:12:50 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-04-21T11:12:50 ICT" duration-ms="55" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Regression Test demo testcase 1"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Regression Test demo testcase 1"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.mgp.mdemo1.frontend.tests.testng.runner.RunCucumberTest@6a370f4]" started-at="2023-04-21T11:12:50 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-04-21T11:12:50 ICT" duration-ms="5" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Regression Test demo testcase 2"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Regression Test demo testcase 2"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.mgp.mdemo1.frontend.tests.testng.runner.RunCucumberTest@6a370f4]" started-at="2023-04-21T11:12:50 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-04-21T11:12:50 ICT" duration-ms="4" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Smoke Test demo testcase 1"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Smoke Test demo testcase 1"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.mgp.mdemo1.frontend.tests.testng.runner.RunCucumberTest@6a370f4]" started-at="2023-04-21T11:12:50 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-04-21T11:12:50 ICT" duration-ms="4" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Smoke Test demo testcase 2"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Smoke Test demo testcase 2"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.mgp.mdemo1.frontend.tests.testng.runner.RunCucumberTest@6a370f4]" started-at="2023-04-21T11:12:50 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-04-21T11:12:50 ICT" duration-ms="4" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["UAT Test demo testcase 1"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["UAT Test demo testcase 1"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.mgp.mdemo1.frontend.tests.testng.runner.RunCucumberTest@6a370f4]" started-at="2023-04-21T11:12:50 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-04-21T11:12:50 ICT" duration-ms="3" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["UAT Test demo testcase 2"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["UAT Test demo testcase 2"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.mgp.mdemo1.frontend.tests.testng.runner.RunCucumberTest@6a370f4]" started-at="2023-04-21T11:12:50 ICT" name="tearDownClass" finished-at="2023-04-21T11:12:50 ICT" duration-ms="74" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- com.mgp.mdemo1.frontend.tests.testng.runner.RunCucumberTest -->
-      <class name="com.mgp.mobile.demo1.testng.runner.RunCucumberTest">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.mgp.mobile.demo1.testng.runner.RunCucumberTest@26275bef]" started-at="2023-04-21T11:12:50 ICT" name="setUpClass" finished-at="2023-04-21T11:12:50 ICT" duration-ms="37" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@750a04ec]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.mgp.mobile.demo1.testng.runner.RunCucumberTest@26275bef]" started-at="2023-04-21T11:12:50 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-04-21T11:13:25 ICT" duration-ms="34414" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.mgp.mdemo1.frontend.tests.testng.runner.RunCucumberTest@503d687a]" started-at="2023-05-10T18:03:18 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-10T18:04:00 ICT" duration-ms="41082" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -144,34 +30,31 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA["Make a payment."]]>
+                <![CDATA["Submit an application."]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.StaleElementReferenceException">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[The element 'By.xpath: //*[contains(@text,'Your balance is')]' is not linked to the same object in DOM anymore
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
-Build info: version: '4.9.0', revision: 'd7057100a6'
+              <![CDATA[An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.1', revision: 'eb2032df7f'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [58d2c9a0-ed29-4832-8e8e-5a130c66f2e6, getElementText {id=00000000-0000-0017-0000-000700000014}]
-Capabilities {appium:app: D:\Mozaic\mgp-mdemo1-fronte..., appium:appPackage: com.experitest.ExperiBank, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: D:\Mozaic\mgp-mdemo1-fronte..., automationName: UIAutomator2, deviceName: emulator-5554, platformName: ANDROID, platformVersion: 12.0}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 560, appium:deviceScreenSize: 1440x2560, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 3.5, appium:platformVersion: 12, appium:statBarHeight: 84, appium:takesScreenshot: true, appium:viewportRect: {height: 2308, left: 0, top: 84, width: 1440}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Element: [[AndroidDriver:  on ANDROID (58d2c9a0-ed29-4832-8e8e-5a130c66f2e6)] -> xpath: //*[contains(@text,'Your balance is')]]
-Session ID: 58d2c9a0-ed29-4832-8e8e-5a130c66f2e6]]>
+Command: [36915d7d-4cd1-4a8f-bf3f-9f9406bc4ab5, findElement {using=xpath, value=//android.widget.EditText}]
+Capabilities {appium:app: D:\Mozaic\mgp-mdemo1-fronte..., appium:appPackage: com.example.mgp_mobile_demo..., appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: D:\Mozaic\mgp-mdemo1-fronte..., automationName: UIAutomator2, deviceName: emulator-5554, platformName: ANDROID, platformVersion: 12.0}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 560, appium:deviceScreenSize: 1440x2560, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 3.5, appium:platformVersion: 12, appium:statBarHeight: 84, appium:takesScreenshot: true, appium:viewportRect: {height: 2308, left: 0, top: 84, width: 1440}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 36915d7d-4cd1-4a8f-bf3f-9f9406bc4ab5]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.StaleElementReferenceException: The element 'By.xpath: //*[contains(@text,'Your balance is')]' is not linked to the same object in DOM anymore
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
-Build info: version: '4.9.0', revision: 'd7057100a6'
+              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.1', revision: 'eb2032df7f'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [58d2c9a0-ed29-4832-8e8e-5a130c66f2e6, getElementText {id=00000000-0000-0017-0000-000700000014}]
-Capabilities {appium:app: D:\Mozaic\mgp-mdemo1-fronte..., appium:appPackage: com.experitest.ExperiBank, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: D:\Mozaic\mgp-mdemo1-fronte..., automationName: UIAutomator2, deviceName: emulator-5554, platformName: ANDROID, platformVersion: 12.0}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 560, appium:deviceScreenSize: 1440x2560, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 3.5, appium:platformVersion: 12, appium:statBarHeight: 84, appium:takesScreenshot: true, appium:viewportRect: {height: 2308, left: 0, top: 84, width: 1440}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Element: [[AndroidDriver:  on ANDROID (58d2c9a0-ed29-4832-8e8e-5a130c66f2e6)] -> xpath: //*[contains(@text,'Your balance is')]]
-Session ID: 58d2c9a0-ed29-4832-8e8e-5a130c66f2e6
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+Command: [36915d7d-4cd1-4a8f-bf3f-9f9406bc4ab5, findElement {using=xpath, value=//android.widget.EditText}]
+Capabilities {appium:app: D:\Mozaic\mgp-mdemo1-fronte..., appium:appPackage: com.example.mgp_mobile_demo..., appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: D:\Mozaic\mgp-mdemo1-fronte..., automationName: UIAutomator2, deviceName: emulator-5554, platformName: ANDROID, platformVersion: 12.0}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 560, appium:deviceScreenSize: 1440x2560, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 3.5, appium:platformVersion: 12, appium:statBarHeight: 84, appium:takesScreenshot: true, appium:viewportRect: {height: 2308, left: 0, top: 84, width: 1440}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 36915d7d-4cd1-4a8f-bf3f-9f9406bc4ab5
+at jdk.internal.reflect.GeneratedConstructorAccessor10.newInstance(Unknown Source)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
@@ -180,28 +63,27 @@ at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpRespo
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
 at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:207)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-at com.sun.proxy.$Proxy24.getText(Unknown Source)
-at com.mgp.mobile.demo1.pageobject.HomePage.getCurrentAmount(HomePage.java:33)
-at com.mgp.mobile.demo1.stepdefinitions.HomeSteps.userShouldSeeTheCurrentPaymentAmountValueIs(HomeSteps.java:25)
-at ✽.User should see the current payment amount value is <80.00>(classpath:features/MakeAPayment.feature:17)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at com.sun.proxy.$Proxy25.sendKeys(Unknown Source)
+at com.mgp.mdemo1.frontend.tests.pageobject.SpendPage.inputOnSpendMoneyTextBox(SpendPage.java:18)
+at com.mgp.mdemo1.frontend.tests.stepdefinitions.SpendSteps.userInputOnSpendMoneyTextBoxWithValueIs(SpendSteps.java:12)
+at ✽.User input on Spend money text box with value is "200000"(classpath:features/SubmitAValidApplication.feature:10)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.mgp.mobile.demo1.testng.runner.RunCucumberTest@26275bef]" started-at="2023-04-21T11:13:25 ICT" name="tearDownClass" finished-at="2023-04-21T11:13:25 ICT" duration-ms="27" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.mgp.mdemo1.frontend.tests.testng.runner.RunCucumberTest@503d687a]" started-at="2023-05-10T18:04:00 ICT" name="tearDownClass" finished-at="2023-05-10T18:04:00 ICT" duration-ms="168" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- com.mgp.mobile.demo1.testng.runner.RunCucumberTest -->
+      </class> <!-- com.mgp.mdemo1.frontend.tests.testng.runner.RunCucumberTest -->
     </test> <!-- Command line test -->
-  </suite> <!-- Command line suite -->
+  </suite> <!-- com.mgp.mdemo1.frontend.tests.testng.runner.RunCucumberTest -->
 </testng-results>

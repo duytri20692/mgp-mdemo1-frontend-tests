@@ -1,10 +1,4 @@
-com\mgp\mdemo1\frontend\tests\stepdefinitions\PaymentSteps.class
 com\mgp\mdemo1\frontend\tests\common\ElementHelper.class
-com\mgp\mdemo1\frontend\tests\pageobject\HomePage.class
-com\mgp\mdemo1\frontend\tests\pageobject\PaymentPage.class
 com\mgp\mdemo1\frontend\tests\testng\runner\RunCucumberTest.class
 com\mgp\mdemo1\frontend\tests\common\ReadPropertiesFileHelper.class
-com\mgp\mdemo1\frontend\tests\stepdefinitions\HomeSteps.class
-com\mgp\mdemo1\frontend\tests\pageobject\LoginPage.class
-com\mgp\mdemo1\frontend\tests\stepdefinitions\LoginSteps.class
 com\mgp\mdemo1\frontend\tests\common\Hooks.class

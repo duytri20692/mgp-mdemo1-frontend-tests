@@ -7,8 +7,8 @@ import org.openqa.selenium.support.FindBy;
 
 public class CongratulationsPage extends ElementHelper {
     @FindBy(xpath = "//android.view.View[@content-desc=\"Congratulations!\"]")
-    private WebElement CongratulationsLabel;
-    @FindBy(xpath = "(//android.view.View)[last()]")
+    private WebElement CongratulationsTitle;
+    @FindBy(xpath = "//android.view.View[@content-desc=\"You have qualified for our Mortgage Prequalification Program.\"]")
     private WebElement CongratulationsText;
 
     public CongratulationsPage(AndroidDriver driver) {
@@ -21,6 +21,6 @@ public class CongratulationsPage extends ElementHelper {
     }
 
     public void waitForPageLoad() {
-        waitForPresence(driver,5, CongratulationsLabel);
+        waitForPresence(driver,5, CongratulationsTitle);
     }
 }

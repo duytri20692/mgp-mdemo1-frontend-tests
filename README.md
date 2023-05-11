@@ -3,9 +3,7 @@
 2. Run test: 
 - Run all test:
    `mvn test`
-- Run Smoke test:
-   `mvn test -Dcucumber.filter.tags="@SmokeTest"`
-- Run Regression test:
-   `mvn test -Dcucumber.filter.tags="@RegressionTest"`
-- Run UAT test:
-   `mvn test -Dcucumber.filter.tags="@UATTest"`
+- Run invalid test:
+   `mvn test -Dcucumber.filter.tags="@SubmitAnInvalidApplication"`
+- Run valid test:
+   `mvn test -Dcucumber.filter.tags="@SubmitAnApplication"`

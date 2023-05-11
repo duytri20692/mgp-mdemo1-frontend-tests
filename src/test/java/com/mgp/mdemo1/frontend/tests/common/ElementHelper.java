@@ -13,18 +13,17 @@ import java.time.Duration;
 
 public class ElementHelper {
     protected AndroidDriver driver;
-    public final String idPrefix = "com.experitest.ExperiBank:id/";
 
     public ElementHelper(AndroidDriver driver){
         this.driver = driver;
         PageFactory.initElements(driver,this);
     }
 
-    public boolean waitForPresence(AndroidDriver driver, int timeLimitInSeconds, WebElement mobileElement) {
+    public boolean waitForPresence(AndroidDriver driver, int timeLimitInSeconds, WebElement webElement) {
         try{
             WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeLimitInSeconds));
-            wait.until(ExpectedConditions.visibilityOf(mobileElement));
-            return mobileElement.isDisplayed();
+            wait.until(ExpectedConditions.visibilityOf(webElement));
+            return webElement.isDisplayed();
         }catch(Exception e){
             System.out.println(e.getMessage());
             return false;

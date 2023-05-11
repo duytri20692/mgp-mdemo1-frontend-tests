@@ -8,10 +8,10 @@ import io.cucumber.java.en.When;
 public class PreRequestSteps extends BasePage {
     PreRequestPage preRequestPage = new PreRequestPage(driver);
 
-    @Given("User open the Mozaic application and go to the Mortgage Prequalification Request page")
-    public void userOpenTheMozaicApplicationAndGoToTheMortgagePrequalificationRequestPage() {
+    @Given("User go to the Prequalification page and select user as {string}")
+    public void userGoToThePrequalificationPageAndSelectUserAs(String user) throws InterruptedException {
         preRequestPage.waitForPageLoad();
-        preRequestPage.pressSelectMenuButton();
-        preRequestPage.pressMenuMortgagePrequalification();
+        preRequestPage.pressSelectAUserButton();
+        preRequestPage.selectUserWithName(user);
     }
 }
