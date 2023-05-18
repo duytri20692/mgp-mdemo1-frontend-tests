@@ -13,9 +13,10 @@ public class SpendPage extends ElementHelper {
         super(driver);
     }
 
-    public SpendPage inputOnSpendMoneyTextBox(String money) {
+    public void inputOnSpendMoneyTextBox(String money) {
         waitForPresence(driver,10, spendMoneyTxt);
+        spendMoneyTxt.clear();
         spendMoneyTxt.sendKeys(money);
-        return this;
+
     }
 }

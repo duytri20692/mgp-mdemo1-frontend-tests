@@ -13,9 +13,9 @@ public class DownPaymentPage extends ElementHelper {
         super(driver);
     }
 
-    public DownPaymentPage inputInDownPaymentTextBox(String money) {
+    public void inputInDownPaymentTextBox(String money) {
         waitForPresence(driver,10, downPaymentTxt);
+        downPaymentTxt.clear();
         downPaymentTxt.sendKeys(money);
-        return this;
     }
 }

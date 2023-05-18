@@ -13,9 +13,9 @@ public class GrossIncomePage extends ElementHelper {
         super(driver);
     }
 
-    public GrossIncomePage inputInGrossIncomeTextBox(String money) {
+    public void inputInGrossIncomeTextBox(String money) {
         waitForPresence(driver,10, grossIncomeTxt);
+        grossIncomeTxt.clear();
         grossIncomeTxt.sendKeys(money);
-        return this;
     }
 }

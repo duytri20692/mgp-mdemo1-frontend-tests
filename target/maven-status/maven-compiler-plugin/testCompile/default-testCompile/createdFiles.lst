@@ -1,4 +1,1 @@
-com\mgp\mdemo1\frontend\tests\common\ElementHelper.class
-com\mgp\mdemo1\frontend\tests\testng\runner\RunCucumberTest.class
-com\mgp\mdemo1\frontend\tests\common\ReadPropertiesFileHelper.class
-com\mgp\mdemo1\frontend\tests\common\Hooks.class
+com\mgp\mdemo1\frontend\tests\stepdefinitions\PreRequestSteps.class

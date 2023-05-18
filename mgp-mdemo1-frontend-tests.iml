@@ -81,33 +81,35 @@
     <orderEntry type="library" name="Maven: org.testng:testng:7.7.0" level="project" />
     <orderEntry type="library" name="Maven: com.beust:jcommander:1.82" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: org.webjars:jquery:3.6.1" level="project" />
-    <orderEntry type="library" name="Maven: io.cucumber:cucumber-java:7.10.1" level="project" />
-    <orderEntry type="library" name="Maven: io.cucumber:cucumber-core:7.10.1" level="project" />
-    <orderEntry type="library" name="Maven: io.cucumber:cucumber-gherkin:7.10.1" level="project" />
-    <orderEntry type="library" name="Maven: io.cucumber:cucumber-gherkin-messages:7.10.1" level="project" />
-    <orderEntry type="library" name="Maven: io.cucumber:gherkin:25.0.2" level="project" />
-    <orderEntry type="library" name="Maven: io.cucumber:messages:19.1.4" level="project" />
-    <orderEntry type="library" name="Maven: io.cucumber:tag-expressions:4.1.0" level="project" />
-    <orderEntry type="library" name="Maven: io.cucumber:cucumber-expressions:16.1.1" level="project" />
-    <orderEntry type="library" name="Maven: io.cucumber:datatable:7.10.1" level="project" />
-    <orderEntry type="library" name="Maven: io.cucumber:cucumber-plugin:7.10.1" level="project" />
-    <orderEntry type="library" name="Maven: io.cucumber:docstring:7.10.1" level="project" />
-    <orderEntry type="library" name="Maven: io.cucumber:html-formatter:20.2.0" level="project" />
+    <orderEntry type="library" name="Maven: io.cucumber:cucumber-java:7.11.1" level="project" />
+    <orderEntry type="library" name="Maven: io.cucumber:cucumber-core:7.11.1" level="project" />
+    <orderEntry type="library" name="Maven: io.cucumber:cucumber-gherkin:7.11.1" level="project" />
+    <orderEntry type="library" name="Maven: io.cucumber:cucumber-gherkin-messages:7.11.1" level="project" />
+    <orderEntry type="library" name="Maven: io.cucumber:gherkin:26.0.3" level="project" />
+    <orderEntry type="library" name="Maven: io.cucumber:messages:21.0.1" level="project" />
+    <orderEntry type="library" name="Maven: io.cucumber:tag-expressions:5.0.1" level="project" />
+    <orderEntry type="library" name="Maven: io.cucumber:cucumber-expressions:16.1.2" level="project" />
+    <orderEntry type="library" name="Maven: io.cucumber:datatable:7.11.1" level="project" />
+    <orderEntry type="library" name="Maven: io.cucumber:cucumber-plugin:7.11.1" level="project" />
+    <orderEntry type="library" name="Maven: io.cucumber:docstring:7.11.1" level="project" />
+    <orderEntry type="library" name="Maven: io.cucumber:html-formatter:20.2.1" level="project" />
+    <orderEntry type="library" name="Maven: io.cucumber:junit-xml-formatter:0.1.0" level="project" />
     <orderEntry type="library" name="Maven: io.cucumber:ci-environment:9.1.0" level="project" />
     <orderEntry type="library" name="Maven: org.apiguardian:apiguardian-api:1.1.2" level="project" />
-    <orderEntry type="library" name="Maven: io.cucumber:cucumber-testng:7.10.1" level="project" />
-    <orderEntry type="library" name="Maven: org.seleniumhq.selenium:selenium-java:4.7.1" level="project" />
-    <orderEntry type="library" name="Maven: org.seleniumhq.selenium:selenium-chrome-driver:4.7.1" level="project" />
-    <orderEntry type="library" name="Maven: org.seleniumhq.selenium:selenium-chromium-driver:4.7.1" level="project" />
-    <orderEntry type="library" name="Maven: org.seleniumhq.selenium:selenium-devtools-v106:4.7.1" level="project" />
-    <orderEntry type="library" name="Maven: org.seleniumhq.selenium:selenium-devtools-v107:4.7.1" level="project" />
-    <orderEntry type="library" name="Maven: org.seleniumhq.selenium:selenium-devtools-v108:4.7.1" level="project" />
-    <orderEntry type="library" name="Maven: org.seleniumhq.selenium:selenium-devtools-v85:4.7.1" level="project" />
-    <orderEntry type="library" name="Maven: org.seleniumhq.selenium:selenium-edge-driver:4.7.1" level="project" />
-    <orderEntry type="library" name="Maven: org.seleniumhq.selenium:selenium-firefox-driver:4.7.1" level="project" />
-    <orderEntry type="library" name="Maven: org.seleniumhq.selenium:selenium-ie-driver:4.7.1" level="project" />
-    <orderEntry type="library" name="Maven: org.seleniumhq.selenium:selenium-safari-driver:4.7.1" level="project" />
+    <orderEntry type="library" name="Maven: io.cucumber:cucumber-testng:7.11.1" level="project" />
+    <orderEntry type="library" name="Maven: org.seleniumhq.selenium:selenium-java:4.8.1" level="project" />
+    <orderEntry type="library" name="Maven: org.seleniumhq.selenium:selenium-chrome-driver:4.8.1" level="project" />
+    <orderEntry type="library" name="Maven: org.seleniumhq.selenium:selenium-chromium-driver:4.8.1" level="project" />
+    <orderEntry type="library" name="Maven: org.seleniumhq.selenium:selenium-devtools-v108:4.8.1" level="project" />
+    <orderEntry type="library" name="Maven: org.seleniumhq.selenium:selenium-devtools-v109:4.8.1" level="project" />
+    <orderEntry type="library" name="Maven: org.seleniumhq.selenium:selenium-devtools-v110:4.8.1" level="project" />
+    <orderEntry type="library" name="Maven: org.seleniumhq.selenium:selenium-devtools-v85:4.8.1" level="project" />
+    <orderEntry type="library" name="Maven: org.seleniumhq.selenium:selenium-edge-driver:4.8.1" level="project" />
+    <orderEntry type="library" name="Maven: org.seleniumhq.selenium:selenium-firefox-driver:4.8.1" level="project" />
+    <orderEntry type="library" name="Maven: org.seleniumhq.selenium:selenium-ie-driver:4.8.1" level="project" />
+    <orderEntry type="library" name="Maven: org.seleniumhq.selenium:selenium-safari-driver:4.8.1" level="project" />
     <orderEntry type="library" name="Maven: com.browserstack:browserstack-local-java:1.0.6" level="project" />
     <orderEntry type="library" name="Maven: org.json:json:20160212" level="project" />
+    <orderEntry type="library" name="Maven: io.github.cdimascio:dotenv-java:2.3.2" level="project" />
   </component>
 </module>

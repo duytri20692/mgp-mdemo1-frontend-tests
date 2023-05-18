@@ -13,9 +13,9 @@ public class MonthlyExpensesPage extends ElementHelper {
         super(driver);
     }
 
-    public MonthlyExpensesPage inputInMonthlyExpenseTextBox(String money) {
+    public void inputInMonthlyExpenseTextBox(String money) {
         waitForPresence(driver,10, monthlyExpenseTxt);
+        monthlyExpenseTxt.clear();
         monthlyExpenseTxt.sendKeys(money);
-        return this;
     }
 }

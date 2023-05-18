@@ -80,9 +80,9 @@ public class TellUsPage extends ElementHelper {
     public TellUsPage pressNextButton() {
         //scroll down to the element and click
         swiptToBottom();
-        if(driver.isKeyboardShown()){
-            driver.hideKeyboard();
-        }
+//        if(driver.isKeyboardShown()){
+//            driver.hideKeyboard();
+//        }
         waitForPresence(driver,10, nextBtn);
         nextBtn.click();
         return this;
