@@ -1,0 +1,11 @@
+{
+  "capabilities": {
+    "project": "Mozaic Android Project",
+    "platformName": "Android",
+    "deviceName": "Samsung Galaxy S22",
+    "unicodeKeyboard": "true",
+    "resetKeyboard": "true",
+    "app": "MozaicApp",
+    "browserstack.debug": "true"
+  }
+}

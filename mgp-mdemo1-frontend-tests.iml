@@ -111,5 +111,8 @@
     <orderEntry type="library" name="Maven: com.browserstack:browserstack-local-java:1.0.6" level="project" />
     <orderEntry type="library" name="Maven: org.json:json:20160212" level="project" />
     <orderEntry type="library" name="Maven: io.github.cdimascio:dotenv-java:2.3.2" level="project" />
+    <orderEntry type="library" name="Maven: com.googlecode.json-simple:json-simple:1.1.1" level="project" />
+    <orderEntry type="library" name="Maven: junit:junit:4.10" level="project" />
+    <orderEntry type="library" name="Maven: org.hamcrest:hamcrest-core:1.1" level="project" />
   </component>
 </module>

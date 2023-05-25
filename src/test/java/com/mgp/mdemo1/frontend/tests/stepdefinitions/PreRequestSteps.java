@@ -1,17 +1,26 @@
 package com.mgp.mdemo1.frontend.tests.stepdefinitions;
 
 import com.mgp.mdemo1.frontend.tests.common.BasePage;
-import com.mgp.mdemo1.frontend.tests.pageobject.PreRequestPage;
+import com.mgp.mdemo1.frontend.tests.pageobject.android.PreRequestPage;
+import com.mgp.mdemo1.frontend.tests.pageobject.ios.PreRequestPageIOS;
 import io.cucumber.java.en.Given;
-import io.cucumber.java.en.When;
 
 public class PreRequestSteps extends BasePage {
-    PreRequestPage preRequestPage = new PreRequestPage(driver);
+    PreRequestPage preRequestPageAndroid;
+    PreRequestPageIOS preRequestPageIOS;
 
     @Given("User go to the Prequalification page and select user as {string}")
     public void userGoToThePrequalificationPageAndSelectUserAs(String user) throws InterruptedException {
-        preRequestPage.waitForPageLoad();
-        preRequestPage.pressSelectAUserButton();
-        preRequestPage.selectUserWithName(user);
+        if(device_running.equals("android")){
+            preRequestPageAndroid = new PreRequestPage(androidDriver);
+            preRequestPageAndroid.waitForPageLoad();
+            preRequestPageAndroid.pressSelectAUserButton();
+            preRequestPageAndroid.selectUserWithName(user);
+        }else if(device_running.equals("ios")){
+            preRequestPageIOS = new PreRequestPageIOS(iosDriver);
+            preRequestPageIOS.waitForPageLoad();
+            preRequestPageIOS.pressSelectAUserButton();
+            preRequestPageIOS.selectUserWithName(user);
+        }
     }
 }
