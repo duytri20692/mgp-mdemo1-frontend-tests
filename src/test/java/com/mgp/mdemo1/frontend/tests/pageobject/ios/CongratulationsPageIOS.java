@@ -1,17 +1,17 @@
 package com.mgp.mdemo1.frontend.tests.pageobject.ios;
 
-import com.mgp.mdemo1.frontend.tests.common.ElementHelperIOS;
-import io.appium.java_client.ios.IOSDriver;
+import com.mgp.mdemo1.frontend.tests.common.ElementHelper;
+import io.appium.java_client.AppiumDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class CongratulationsPageIOS extends ElementHelperIOS {
+public class CongratulationsPageIOS extends ElementHelper {
     @FindBy(xpath = "//*[@name='Congratulations!']")
     private WebElement CongratulationsTitle;
     @FindBy(xpath = "//*[@name='You have qualified for our Mortgage Prequalification Program.']")
     private WebElement CongratulationsText;
 
-    public CongratulationsPageIOS(IOSDriver driver) {
+    public CongratulationsPageIOS(AppiumDriver driver) {
         super(driver);
     }
 

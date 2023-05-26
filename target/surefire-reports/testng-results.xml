@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="6" passed="5" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-23T18:05:10 ICT" name="Surefire suite" finished-at="2023-05-23T18:36:11 ICT" duration-ms="1861114">
+  <suite started-at="2023-05-26T15:51:41 ICT" name="Surefire suite" finished-at="2023-05-26T15:56:29 ICT" duration-ms="288306">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.mgp.mdemo1.frontend.tests.testng.runner.RunCucumberTest@194bcebf]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.mgp.mdemo1.frontend.tests.testng.runner.RunCucumberTest@316bcf94]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2023-05-23T18:05:10 ICT" name="Surefire test" finished-at="2023-05-23T18:36:11 ICT" duration-ms="1861114">
+    <test started-at="2023-05-26T15:51:41 ICT" name="Surefire test" finished-at="2023-05-26T15:56:29 ICT" duration-ms="288306">
       <class name="com.mgp.mdemo1.frontend.tests.testng.runner.RunCucumberTest">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.mgp.mdemo1.frontend.tests.testng.runner.RunCucumberTest@194bcebf]" started-at="2023-05-23T18:05:10 ICT" name="setUpClass" finished-at="2023-05-23T18:05:11 ICT" duration-ms="612" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.mgp.mdemo1.frontend.tests.testng.runner.RunCucumberTest@316bcf94]" started-at="2023-05-26T15:51:41 ICT" name="setUpClass" finished-at="2023-05-26T15:51:41 ICT" duration-ms="561" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@43e065f2]]>
+                <![CDATA[org.testng.TestRunner@2ab8589a]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.mgp.mdemo1.frontend.tests.testng.runner.RunCucumberTest@194bcebf]" started-at="2023-05-23T18:05:11 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-23T18:36:11 ICT" duration-ms="1859931" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.mgp.mdemo1.frontend.tests.testng.runner.RunCucumberTest@316bcf94]" started-at="2023-05-26T15:51:41 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-26T15:52:51 ICT" duration-ms="69551" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -34,132 +34,107 @@
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
-Host info: host: 'TRIPC', ip: '192.168.1.9']]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
-Host info: host: 'TRIPC', ip: '192.168.1.9'
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
-at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:229)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:157)
-at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:80)
-at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:92)
-at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:117)
-at com.mgp.mdemo1.frontend.tests.common.Hooks.setupDriver(Hooks.java:71)
-Caused by: org.openqa.selenium.WebDriverException: java.lang.reflect.InvocationTargetException
-Build info: version: '4.9.1', revision: 'eb2032df7f'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
-Driver info: driver.version: AndroidDriver
-at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:137)
-at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
-at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:194)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:229)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:157)
-at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:80)
-at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:92)
-at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:117)
-at com.mgp.mdemo1.frontend.tests.common.Hooks.setupDriver(Hooks.java:71)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
-at io.cucumber.java.Invoker.invoke(Invoker.java:24)
-at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
-at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:64)
-at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:46)
-at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)
-at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
-at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
-at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
-at io.cucumber.core.runner.TestCase.run(TestCase.java:78)
-at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
-at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
-at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:130)
-at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:130)
-at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
-at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:102)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:91)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-Caused by: java.lang.reflect.InvocationTargetException
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
-... 64 more
-Caused by: java.lang.RuntimeException: NettyHttpHandler request execution error
-at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:76)
-at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-at io.appium.java_client.remote.AppiumCommandExecutor.lambda$null$0(AppiumCommandExecutor.java:199)
-at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
-at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:49)
-at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-at io.appium.java_client.remote.AppiumCommandExecutor.lambda$null$0(AppiumCommandExecutor.java:199)
-at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
-at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:99)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:112)
-... 69 more
-Caused by: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: Request timeout to hub-cloud.browserstack.com/173.234.104.2:80 after 600000 ms
-at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:395)
-at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2022)
-at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:206)
-at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:59)
-... 78 more
-Caused by: java.util.concurrent.TimeoutException: Request timeout to hub-cloud.browserstack.com/173.234.104.2:80 after 600000 ms
-at org.asynchttpclient.netty.timeout.TimeoutTimerTask.expire(TimeoutTimerTask.java:43)
-at org.asynchttpclient.netty.timeout.RequestTimeoutTimerTask.run(RequestTimeoutTimerTask.java:50)
-at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:715)
-at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
-at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:703)
-at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:790)
-at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:503)
-at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-at java.base/java.lang.Thread.run(Thread.java:834)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.mgp.mdemo1.frontend.tests.testng.runner.RunCucumberTest@194bcebf]" started-at="2023-05-23T18:36:11 ICT" name="tearDownClass" finished-at="2023-05-23T18:36:11 ICT" duration-ms="436" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.mgp.mdemo1.frontend.tests.testng.runner.RunCucumberTest@316bcf94]" started-at="2023-05-26T15:52:51 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-26T15:53:34 ICT" duration-ms="43464" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user cannot make a payment if input invalid data on the Prequalification screen."]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Submit an invalid application."]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.mgp.mdemo1.frontend.tests.testng.runner.RunCucumberTest@316bcf94]" started-at="2023-05-26T15:53:34 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-26T15:54:14 ICT" duration-ms="39737" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user cannot make a payment if input invalid data on the Prequalification screen."]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Submit an invalid application."]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.mgp.mdemo1.frontend.tests.testng.runner.RunCucumberTest@316bcf94]" started-at="2023-05-26T15:54:14 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-26T15:54:52 ICT" duration-ms="37498" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user cannot make a payment if input invalid data on the Prequalification screen."]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Submit an invalid application."]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.mgp.mdemo1.frontend.tests.testng.runner.RunCucumberTest@316bcf94]" started-at="2023-05-26T15:54:52 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-26T15:55:29 ICT" duration-ms="37195" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user cannot make a payment if input invalid data on the Prequalification screen."]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Submit an invalid application."]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.mgp.mdemo1.frontend.tests.testng.runner.RunCucumberTest@316bcf94]" started-at="2023-05-26T15:55:29 ICT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-26T15:56:29 ICT" duration-ms="60174" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user cannot make a payment if input invalid data on the Consent page."]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Submit an invalid application."]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Werex sorry you declined our process!] but found [null]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Werex sorry you declined our process!] but found [null]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at org.testng.Assert.assertEquals(Assert.java:665)
+at com.mgp.mdemo1.frontend.tests.stepdefinitions.WeAreSorrySteps.userShouldSeeTheMessage(WeAreSorrySteps.java:32)
+at ✽.User should see the message "Werex sorry you declined our process!"(classpath:features/SubmitAnInvalidApplication.feature:25)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.mgp.mdemo1.frontend.tests.testng.runner.RunCucumberTest@316bcf94]" started-at="2023-05-26T15:56:29 ICT" name="tearDownClass" finished-at="2023-05-26T15:56:29 ICT" duration-ms="71" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

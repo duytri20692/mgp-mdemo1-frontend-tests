@@ -1,6 +1,7 @@
 # Ignore files in a specific directory
 **/.idea
 **/target
+target/
 
 # Ignore specific files
 mgp-mdemo1-frontend-tests.iml

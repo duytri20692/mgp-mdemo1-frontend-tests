@@ -25,7 +25,7 @@ public class TellUsSteps extends BasePage {
     @When("User select answers as {string}, {string}, {string} and {string}")
     public void userSelectAnswersAsAnd(String q1, String q2, String q3, String q4) {
         if(device_running.equals("android")){
-            tellUsPageAndroid = new TellUsPage(androidDriver);
+            tellUsPageAndroid = new TellUsPage(driver);
             // Select question 1
             if("n".equals(q1.trim().toLowerCase(Locale.ROOT))){
                 tellUsPageAndroid.pressQ1_Other_Checkbox();
@@ -51,7 +51,7 @@ public class TellUsSteps extends BasePage {
                 tellUsPageAndroid.pressQ4_Yes_Checkbox();
             }
         }else if(device_running.equals("ios")){
-            tellUsPageIOS = new TellUsPageIOS(iosDriver);
+            tellUsPageIOS = new TellUsPageIOS(driver);
             // Select question 1
             if(q1.trim().toLowerCase(Locale.ROOT).equals("n")){
                 tellUsPageIOS.pressQ1_Other_Checkbox();

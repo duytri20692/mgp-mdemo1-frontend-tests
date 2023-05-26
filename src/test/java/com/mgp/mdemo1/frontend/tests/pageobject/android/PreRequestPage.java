@@ -1,13 +1,13 @@
 package com.mgp.mdemo1.frontend.tests.pageobject.android;
 
-import com.mgp.mdemo1.frontend.tests.common.ElementHelperAndroid;
-import io.appium.java_client.android.AndroidDriver;
+import com.mgp.mdemo1.frontend.tests.common.ElementHelper;
+import io.appium.java_client.AppiumDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 import java.util.Locale;
 
-public class PreRequestPage extends ElementHelperAndroid {
+public class PreRequestPage extends ElementHelper {
     @FindBy(xpath = "//android.view.View[@content-desc='Mortgage Prequalification Request']")
     private WebElement preRequestPageTittle;
     @FindBy(xpath = "//*[contains(@content-desc,'Select a user')]")
@@ -27,7 +27,7 @@ public class PreRequestPage extends ElementHelperAndroid {
     @FindBy(xpath = "//*[contains(@content-desc,'Test User7')]")
     private WebElement selectTestUser7;
 
-    public PreRequestPage(AndroidDriver driver) {
+    public PreRequestPage(AppiumDriver driver) {
         super(driver);
     }
 

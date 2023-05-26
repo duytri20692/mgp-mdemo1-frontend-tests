@@ -1,13 +1,13 @@
 package com.mgp.mdemo1.frontend.tests.pageobject.ios;
 
-import com.mgp.mdemo1.frontend.tests.common.ElementHelperIOS;
-import io.appium.java_client.ios.IOSDriver;
+import com.mgp.mdemo1.frontend.tests.common.ElementHelper;
+import io.appium.java_client.AppiumDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 import java.util.Locale;
 
-public class PreRequestPageIOS extends ElementHelperIOS {
+public class PreRequestPageIOS extends ElementHelper {
     @FindBy(xpath = "//*[@name='Mortgage Prequalification Request']")
     private WebElement preRequestPageTittle;
     @FindBy(xpath = "//*[@name='Select a user']")
@@ -27,7 +27,7 @@ public class PreRequestPageIOS extends ElementHelperIOS {
     @FindBy(xpath = "//*[contains(@name,'Test User7')]")
     private WebElement selectTestUser7;
 
-    public PreRequestPageIOS(IOSDriver driver) {
+    public PreRequestPageIOS(AppiumDriver driver) {
         super(driver);
     }
 

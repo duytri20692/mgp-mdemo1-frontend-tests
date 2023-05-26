@@ -15,7 +15,7 @@ public class ConsentSteps  extends BasePage {
     public void userClickOnConsentCheckboxWithValueIs(String consentOption) {
         boolean n = consentOption.trim().toLowerCase(Locale.ROOT).equals("n");
         if(device_running.equals("android")){
-            consentPageAndroid = new ConsentPage(androidDriver);
+            consentPageAndroid = new ConsentPage(driver);
             consentPageAndroid.waitForPageLoad();
             // Select consent option
             if(n){
@@ -24,7 +24,7 @@ public class ConsentSteps  extends BasePage {
                 consentPageAndroid.pressYesCheckbox();
             }
         }else if(device_running.equals("ios")){
-            consentPageIOS = new ConsentPageIOS(iosDriver);
+            consentPageIOS = new ConsentPageIOS(driver);
             consentPageIOS.waitForPageLoad();
             // Select consent option
             if(n){

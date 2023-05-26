@@ -14,10 +14,10 @@ public class CongratulationsSteps extends BasePage {
     public void userShouldSeeTheCongratulationsPage()
     {
         if(device_running.equals("android")){
-            congratulationsPageAndroid = new CongratulationsPage(androidDriver);
+            congratulationsPageAndroid = new CongratulationsPage(driver);
             congratulationsPageAndroid.waitForPageLoad();
         }else if(device_running.equals("ios")){
-            congratulationsPageIOS = new CongratulationsPageIOS(iosDriver);
+            congratulationsPageIOS = new CongratulationsPageIOS(driver);
             congratulationsPageIOS.waitForPageLoad();
         }
     }

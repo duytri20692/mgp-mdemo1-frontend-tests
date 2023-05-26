@@ -1,17 +1,18 @@
 package com.mgp.mdemo1.frontend.tests.pageobject.android;
 
-import com.mgp.mdemo1.frontend.tests.common.ElementHelperAndroid;
+import com.mgp.mdemo1.frontend.tests.common.ElementHelper;
+import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class WeAreSorryPage extends ElementHelperAndroid {
+public class WeAreSorryPage extends ElementHelper {
     @FindBy(xpath = "//android.widget.Button[@content-desc=\"Start again\"]")
     private WebElement startAgainBtn;
     @FindBy(xpath = "(//android.view.View)[last()]")
     private WebElement weAreSorryText;
 
-    public WeAreSorryPage(AndroidDriver driver) {
+    public WeAreSorryPage(AppiumDriver driver) {
         super(driver);
     }
 

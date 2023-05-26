@@ -1,19 +1,17 @@
 package com.mgp.mdemo1.frontend.tests.pageobject.ios;
 
-import com.mgp.mdemo1.frontend.tests.common.ElementHelperAndroid;
-import com.mgp.mdemo1.frontend.tests.common.ElementHelperIOS;
-import io.appium.java_client.android.AndroidDriver;
-import io.appium.java_client.ios.IOSDriver;
+import com.mgp.mdemo1.frontend.tests.common.ElementHelper;
+import io.appium.java_client.AppiumDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class WeAreSorryPageIOS extends ElementHelperIOS {
+public class WeAreSorryPageIOS extends ElementHelper {
     @FindBy(xpath = "//XCUIElementTypeButton[@name='Start again']")
     private WebElement startAgainBtn;
     @FindBy(xpath = "(//XCUIElementTypeStaticText)[last()]")
     private WebElement weAreSorryText;
 
-    public WeAreSorryPageIOS(IOSDriver driver) {
+    public WeAreSorryPageIOS(AppiumDriver driver) {
         super(driver);
     }
 

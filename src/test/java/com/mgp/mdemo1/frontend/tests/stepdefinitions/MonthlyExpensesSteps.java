@@ -12,12 +12,12 @@ public class MonthlyExpensesSteps extends BasePage {
     @And("User input on Monthly Expenses text box with value is {string}")
     public void userInputOnMonthlyExpensesTextBoxWithValueIs(String monthlyExpenses) {
         if(device_running.equals("android")){
-            monthlyExpensesPageAndroid = new MonthlyExpensesPage(androidDriver);
+            monthlyExpensesPageAndroid = new MonthlyExpensesPage(driver);
             monthlyExpensesPageAndroid.inputInMonthlyExpenseTextBox(monthlyExpenses);
         }else if(device_running.equals("ios")){
-            monthlyExpensesPageIOS = new MonthlyExpensesPageIOS(iosDriver);
+            monthlyExpensesPageIOS = new MonthlyExpensesPageIOS(driver);
             monthlyExpensesPageIOS.inputInMonthlyExpenseTextBox(monthlyExpenses);
-            iosDriver.hideKeyboard();
+//            driver.hideKeyboard();
         }
     }
 }

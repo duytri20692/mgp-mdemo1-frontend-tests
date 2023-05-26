@@ -1,11 +1,12 @@
 package com.mgp.mdemo1.frontend.tests.pageobject.android;
 
-import com.mgp.mdemo1.frontend.tests.common.ElementHelperAndroid;
+import com.mgp.mdemo1.frontend.tests.common.ElementHelper;
+import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class TellUsPage extends ElementHelperAndroid {
+public class TellUsPage extends ElementHelper {
     @FindBy(xpath = "//android.view.View[@content-desc=\"House or Condo\"]/android.widget.RadioButton")
     private WebElement q1_HouseOrCondoCbx;
     @FindBy(xpath = "//android.view.View[@content-desc=\"Other\"]/android.widget.RadioButton")
@@ -25,7 +26,7 @@ public class TellUsPage extends ElementHelperAndroid {
     @FindBy(xpath = "//android.widget.Button[@content-desc=\"Next\"]")
     private WebElement nextBtn;
 
-    public TellUsPage(AndroidDriver driver) {
+    public TellUsPage(AppiumDriver driver) {
         super(driver);
     }
 
@@ -79,7 +80,7 @@ public class TellUsPage extends ElementHelperAndroid {
 
     public TellUsPage pressNextButton() {
         //scroll down to the element and click
-        swiptToBottom();
+//        swiptToBottom();
         waitForPresence(driver,10, nextBtn);
         nextBtn.click();
         return this;

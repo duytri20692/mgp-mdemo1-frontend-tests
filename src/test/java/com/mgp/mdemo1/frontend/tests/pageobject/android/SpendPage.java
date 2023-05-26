@@ -1,15 +1,16 @@
 package com.mgp.mdemo1.frontend.tests.pageobject.android;
 
-import com.mgp.mdemo1.frontend.tests.common.ElementHelperAndroid;
+import com.mgp.mdemo1.frontend.tests.common.ElementHelper;
+import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class SpendPage extends ElementHelperAndroid {
+public class SpendPage extends ElementHelper {
     @FindBy(xpath = "//android.widget.EditText")
     private WebElement spendMoneyTxt;
 
-    public SpendPage(AndroidDriver driver) {
+    public SpendPage(AppiumDriver driver) {
         super(driver);
     }
 
@@ -17,6 +18,5 @@ public class SpendPage extends ElementHelperAndroid {
         waitForPresence(driver,10, spendMoneyTxt);
         spendMoneyTxt.clear();
         spendMoneyTxt.sendKeys(money);
-
     }
 }

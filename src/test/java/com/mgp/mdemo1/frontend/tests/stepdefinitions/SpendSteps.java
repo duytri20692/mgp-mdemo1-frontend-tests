@@ -14,12 +14,12 @@ public class SpendSteps extends BasePage {
     @And("User input on Spend money text box with value is {string}")
     public void userInputOnSpendMoneyTextBoxWithValueIs(String spendMoney) {
         if(device_running.equals("android")){
-            spendPageAndroid = new SpendPage(androidDriver);
+            spendPageAndroid = new SpendPage(driver);
             spendPageAndroid.inputOnSpendMoneyTextBox(spendMoney);
         }else if(device_running.equals("ios")){
-            spendPageIOS = new SpendPageIOS(iosDriver);
+            spendPageIOS = new SpendPageIOS(driver);
             spendPageIOS.inputOnSpendMoneyTextBox(spendMoney);
-            iosDriver.hideKeyboard();
+//            iosDriver.hideKeyboard();
         }
     }
 }

@@ -13,10 +13,10 @@ public class SummaryReviewSteps extends BasePage {
     @Then("User should see the Summary Review Page")
     public void userShouldSeeTheSummaryReviewPage() {
         if(device_running.equals("android")){
-            summaryReviewPageAndroid = new SummaryReviewPage(androidDriver);
+            summaryReviewPageAndroid = new SummaryReviewPage(driver);
             summaryReviewPageAndroid.waitForPageLoad();
         }else if(device_running.equals("ios")){
-            summaryReviewPageIOS = new SummaryReviewPageIOS(iosDriver);
+            summaryReviewPageIOS = new SummaryReviewPageIOS(driver);
             summaryReviewPageIOS.waitForPageLoad();
         }
     }

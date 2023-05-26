@@ -12,12 +12,12 @@ public class DownPaymentSteps extends BasePage {
     @And("User input on Down payment money text box with value is {string}")
     public void userInputOnDownPaymentMoneyTextBoxWithValueIs(String downPaymentMoney) {
         if(device_running.equals("android")){
-            downPaymentPageAndroid = new DownPaymentPage(androidDriver);
+            downPaymentPageAndroid = new DownPaymentPage(driver);
             downPaymentPageAndroid.inputInDownPaymentTextBox(downPaymentMoney);
         }else if(device_running.equals("ios")){
-            downPaymentPageIOS = new DownPaymentPageIOS(iosDriver);
+            downPaymentPageIOS = new DownPaymentPageIOS(driver);
             downPaymentPageIOS.inputInDownPaymentTextBox(downPaymentMoney);
-            iosDriver.hideKeyboard();
+//            driver.hideKeyboard();
         }
     }
 }

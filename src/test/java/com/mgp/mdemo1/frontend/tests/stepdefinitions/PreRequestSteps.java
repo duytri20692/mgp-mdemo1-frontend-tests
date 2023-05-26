@@ -12,12 +12,12 @@ public class PreRequestSteps extends BasePage {
     @Given("User go to the Prequalification page and select user as {string}")
     public void userGoToThePrequalificationPageAndSelectUserAs(String user) throws InterruptedException {
         if(device_running.equals("android")){
-            preRequestPageAndroid = new PreRequestPage(androidDriver);
+            preRequestPageAndroid = new PreRequestPage(driver);
             preRequestPageAndroid.waitForPageLoad();
             preRequestPageAndroid.pressSelectAUserButton();
             preRequestPageAndroid.selectUserWithName(user);
         }else if(device_running.equals("ios")){
-            preRequestPageIOS = new PreRequestPageIOS(iosDriver);
+            preRequestPageIOS = new PreRequestPageIOS(driver);
             preRequestPageIOS.waitForPageLoad();
             preRequestPageIOS.pressSelectAUserButton();
             preRequestPageIOS.selectUserWithName(user);

@@ -1,9 +1,7 @@
 {
   "capabilities": {
     "project": "Mozaic iOS Project",
-    "build": "browserstack-build-2",
     "platformName": "ios",
-    "platformVersion": "16",
     "deviceName": "iPhone 14",
     "app": "MozaicAppIOS",
     "browserstack.debug": "true"

@@ -1,11 +1,11 @@
 package com.mgp.mdemo1.frontend.tests.pageobject.ios;
 
-import com.mgp.mdemo1.frontend.tests.common.ElementHelperIOS;
-import io.appium.java_client.ios.IOSDriver;
+import com.mgp.mdemo1.frontend.tests.common.ElementHelper;
+import io.appium.java_client.AppiumDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class ConsentPageIOS extends ElementHelperIOS {
+public class ConsentPageIOS extends ElementHelper {
     @FindBy(xpath = "//*[@name='Yes']/following-sibling::XCUIElementTypeSwitch")
     private WebElement yes_Cbx;
     @FindBy(xpath = "//*[@name='No']/following-sibling::XCUIElementTypeSwitch")
@@ -13,7 +13,7 @@ public class ConsentPageIOS extends ElementHelperIOS {
     @FindBy(xpath = "//*[@name='We need your consent!']")
     private WebElement consentPageTitle;
 
-    public ConsentPageIOS(IOSDriver driver) {
+    public ConsentPageIOS(AppiumDriver driver) {
         super(driver);
     }
 

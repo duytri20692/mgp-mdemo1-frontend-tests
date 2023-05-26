@@ -1,11 +1,11 @@
 package com.mgp.mdemo1.frontend.tests.pageobject.ios;
 
-import com.mgp.mdemo1.frontend.tests.common.ElementHelperIOS;
-import io.appium.java_client.ios.IOSDriver;
+import com.mgp.mdemo1.frontend.tests.common.ElementHelper;
+import io.appium.java_client.AppiumDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class TellUsPageIOS extends ElementHelperIOS {
+public class TellUsPageIOS extends ElementHelper {
     @FindBy(xpath = "//*[@name='House or Condo']/following-sibling::XCUIElementTypeSwitch")
     private WebElement q1_HouseOrCondoCbx;
     @FindBy(xpath = "//*[@name='Other']/following-sibling::XCUIElementTypeSwitch")
@@ -25,7 +25,7 @@ public class TellUsPageIOS extends ElementHelperIOS {
     @FindBy(xpath = "//*[@name='Next']")
     private WebElement nextBtn;
 
-    public TellUsPageIOS(IOSDriver driver) {
+    public TellUsPageIOS(AppiumDriver driver) {
         super(driver);
     }
 
@@ -79,7 +79,7 @@ public class TellUsPageIOS extends ElementHelperIOS {
 
     public TellUsPageIOS pressNextButton() {
         //scroll down to the element and click
-        swiptToBottom();
+//        swiptToBottom();
         waitForPresence(driver,10, nextBtn);
         nextBtn.click();
         return this;

@@ -1,15 +1,15 @@
 package com.mgp.mdemo1.frontend.tests.pageobject.ios;
 
-import com.mgp.mdemo1.frontend.tests.common.ElementHelperIOS;
-import io.appium.java_client.ios.IOSDriver;
+import com.mgp.mdemo1.frontend.tests.common.ElementHelper;
+import io.appium.java_client.AppiumDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class SpendPageIOS extends ElementHelperIOS {
+public class SpendPageIOS extends ElementHelper {
     @FindBy(xpath = "//XCUIElementTypeTextField")
     private WebElement spendMoneyTxt;
 
-    public SpendPageIOS(IOSDriver driver) {
+    public SpendPageIOS(AppiumDriver driver) {
         super(driver);
     }
 
@@ -17,6 +17,5 @@ public class SpendPageIOS extends ElementHelperIOS {
         waitForPresence(driver,10, spendMoneyTxt);
         spendMoneyTxt.clear();
         spendMoneyTxt.sendKeys(money);
-
     }
 }

@@ -14,11 +14,11 @@ public class WeAreSorrySteps extends BasePage {
     @Then("User should see we are sorry page")
     public void userShouldSeeWeAreSorryPage() {
         if(device_running.equals("android")){
-            weAreSorryPageAndroid = new WeAreSorryPage(androidDriver);
+            weAreSorryPageAndroid = new WeAreSorryPage(driver);
             weAreSorryPageAndroid.waitForPageLoad();
         }
         else if(device_running.equals("ios")){
-            weAreSorryPageIOS = new WeAreSorryPageIOS(iosDriver);
+            weAreSorryPageIOS = new WeAreSorryPageIOS(driver);
             weAreSorryPageIOS.waitForPageLoad();
         }
     }
