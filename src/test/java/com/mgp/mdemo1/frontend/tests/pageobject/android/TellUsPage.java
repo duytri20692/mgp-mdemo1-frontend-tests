@@ -2,28 +2,27 @@ package com.mgp.mdemo1.frontend.tests.pageobject.android;
 
 import com.mgp.mdemo1.frontend.tests.common.ElementHelper;
 import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class TellUsPage extends ElementHelper {
-    @FindBy(xpath = "//android.view.View[@content-desc=\"House or Condo\"]/android.widget.RadioButton")
+    @FindBy(xpath = "//*[@content-desc=\"House or Condo\"]/android.widget.RadioButton")
     private WebElement q1_HouseOrCondoCbx;
-    @FindBy(xpath = "//android.view.View[@content-desc=\"Other\"]/android.widget.RadioButton")
+    @FindBy(xpath = "//*[@content-desc=\"Other\"]/android.widget.RadioButton")
     private WebElement q1_OtherCbx;
-    @FindBy(xpath = "(//android.view.View[@content-desc=\"Yes\"])[1]/android.widget.RadioButton")
+    @FindBy(xpath = "(//*[@content-desc=\"Yes\"])[1]/android.widget.RadioButton")
     private WebElement q2_YesCbx;
-    @FindBy(xpath = "(//android.view.View[@content-desc=\"No\"])[1]/android.widget.RadioButton")
+    @FindBy(xpath = "(//*[@content-desc=\"No\"])[1]/android.widget.RadioButton")
     private WebElement q2_NoCbx;
-    @FindBy(xpath = "(//android.view.View[@content-desc=\"Yes\"])[2]/android.widget.RadioButton")
+    @FindBy(xpath = "(//*[@content-desc=\"Yes\"])[2]/android.widget.RadioButton")
     private WebElement q3_YesCbx;
-    @FindBy(xpath = "(//android.view.View[@content-desc=\"No\"])[2]/android.widget.RadioButton")
+    @FindBy(xpath = "(//*[@content-desc=\"No\"])[2]/android.widget.RadioButton")
     private WebElement q3_NoCbx;
-    @FindBy(xpath = "(//android.view.View[@content-desc=\"Yes\"])[3]/android.widget.RadioButton")
+    @FindBy(xpath = "(//*[@content-desc=\"Yes\"])[3]/android.widget.RadioButton")
     private WebElement q4_YesCbx;
-    @FindBy(xpath = "(//android.view.View[@content-desc=\"No\"])[3]/android.widget.RadioButton")
+    @FindBy(xpath = "(//*[@content-desc=\"No\"])[3]/android.widget.RadioButton")
     private WebElement q4_NoCbx;
-    @FindBy(xpath = "//android.widget.Button[@content-desc=\"Next\"]")
+    @FindBy(xpath = "//*[@content-desc=\"Next\"]")
     private WebElement nextBtn;
 
     public TellUsPage(AppiumDriver driver) {

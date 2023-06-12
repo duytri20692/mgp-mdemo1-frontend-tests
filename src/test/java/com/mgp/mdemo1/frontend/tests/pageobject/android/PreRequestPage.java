@@ -8,7 +8,7 @@ import org.openqa.selenium.support.FindBy;
 import java.util.Locale;
 
 public class PreRequestPage extends ElementHelper {
-    @FindBy(xpath = "//android.view.View[@content-desc='Mortgage Prequalification Request']")
+    @FindBy(xpath = "//*[@content-desc='Mortgage Prequalification Request']")
     private WebElement preRequestPageTittle;
     @FindBy(xpath = "//*[contains(@content-desc,'Select a user')]")
     private WebElement selectAUserButton;
