@@ -11,3 +11,4 @@ mgp-mdemo1-frontend-tests.iml
 *.tmp
 *.class
 *.html
+.env
