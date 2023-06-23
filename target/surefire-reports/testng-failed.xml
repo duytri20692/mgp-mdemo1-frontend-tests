@@ -6,8 +6,8 @@
       <class name="com.mgp.mdemo1.frontend.tests.testng.runner.RunCucumberTest">
         <methods>
           <include name="setUpClass"/>
-          <include name="runScenario" invocation-numbers="5"/>
           <include name="tearDownClass"/>
+          <include name="runScenario" invocation-numbers="5"/>
         </methods>
       </class> <!-- com.mgp.mdemo1.frontend.tests.testng.runner.RunCucumberTest -->
     </classes>

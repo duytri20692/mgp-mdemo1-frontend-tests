@@ -1,4 +1,4 @@
-@SubmitAnApplication
+@SmokeTest
 Feature: Submit an application.
 
   Scenario Outline: Verify user can make a payment after login to the system.

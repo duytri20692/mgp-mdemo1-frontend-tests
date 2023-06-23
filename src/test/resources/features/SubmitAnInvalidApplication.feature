@@ -1,4 +1,4 @@
-@SubmitAnInvalidApplication
+@RegressionTest
 Feature: Submit an invalid application.
 
   Scenario Outline: Verify user cannot make a payment if input invalid data on the Prequalification screen.

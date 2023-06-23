@@ -8,7 +8,7 @@ import org.openqa.selenium.support.FindBy;
 public class WeAreSorryPage extends ElementHelper {
     @FindBy(xpath = "//*[@content-desc=\"Start again\"]")
     private WebElement startAgainBtn;
-    @FindBy(xpath = "(//android.view.View)[last()]")
+    @FindBy(xpath = "//*[@content-desc=\"Werex sorry you declined our process!\"]")
     private WebElement weAreSorryText;
 
     public WeAreSorryPage(AppiumDriver driver) {
