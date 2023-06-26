@@ -4,7 +4,9 @@ import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
 import io.cucumber.java.After;
+import io.cucumber.java.AfterAll;
 import io.cucumber.java.Before;
+import io.cucumber.java.BeforeAll;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
@@ -21,6 +23,7 @@ import java.time.LocalDateTime;
 import java.util.*;
 
 import io.github.cdimascio.dotenv.Dotenv;
+import org.testng.annotations.AfterTest;
 
 public class Hooks extends BasePage {
     static Dotenv dotenv = Dotenv.load();

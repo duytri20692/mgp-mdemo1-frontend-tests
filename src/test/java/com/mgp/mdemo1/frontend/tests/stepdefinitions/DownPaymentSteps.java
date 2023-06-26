@@ -13,10 +13,10 @@ public class DownPaymentSteps extends BasePage {
     public void userInputOnDownPaymentMoneyTextBoxWithValueIs(String downPaymentMoney) {
         if(device_running.equals("android")){
             downPaymentPageAndroid = new DownPaymentPage(driver);
-            downPaymentPageAndroid.inputInDownPaymentTextBox(downPaymentMoney);
+            downPaymentPageAndroid.inputInDownPaymentTextBox(downPaymentMoney.trim());
         }else if(device_running.equals("ios")){
             downPaymentPageIOS = new DownPaymentPageIOS(driver);
-            downPaymentPageIOS.inputInDownPaymentTextBox(downPaymentMoney);
+            downPaymentPageIOS.inputInDownPaymentTextBox(downPaymentMoney.trim());
 //            driver.hideKeyboard();
         }
     }

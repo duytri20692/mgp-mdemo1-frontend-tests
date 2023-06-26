@@ -13,10 +13,10 @@ public class MonthlyExpensesSteps extends BasePage {
     public void userInputOnMonthlyExpensesTextBoxWithValueIs(String monthlyExpenses) {
         if(device_running.equals("android")){
             monthlyExpensesPageAndroid = new MonthlyExpensesPage(driver);
-            monthlyExpensesPageAndroid.inputInMonthlyExpenseTextBox(monthlyExpenses);
+            monthlyExpensesPageAndroid.inputInMonthlyExpenseTextBox(monthlyExpenses.trim());
         }else if(device_running.equals("ios")){
             monthlyExpensesPageIOS = new MonthlyExpensesPageIOS(driver);
-            monthlyExpensesPageIOS.inputInMonthlyExpenseTextBox(monthlyExpenses);
+            monthlyExpensesPageIOS.inputInMonthlyExpenseTextBox(monthlyExpenses.trim());
 //            driver.hideKeyboard();
         }
     }

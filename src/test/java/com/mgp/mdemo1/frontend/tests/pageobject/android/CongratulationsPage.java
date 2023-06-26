@@ -5,7 +5,7 @@ import io.appium.java_client.AppiumDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class CongratulationsPage extends ElementHelper {
+public class  CongratulationsPage extends ElementHelper {
     @FindBy(xpath = "//*[@content-desc=\"Congratulations!\"]")
     private WebElement CongratulationsTitle;
     @FindBy(xpath = "//*[@content-desc=\"You have qualified for our Mortgage Prequalification Program.\"]")

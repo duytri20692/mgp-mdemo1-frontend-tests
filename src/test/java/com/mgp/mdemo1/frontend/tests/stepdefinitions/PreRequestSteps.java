@@ -15,12 +15,12 @@ public class PreRequestSteps extends BasePage {
             preRequestPageAndroid = new PreRequestPage(driver);
             preRequestPageAndroid.waitForPageLoad();
             preRequestPageAndroid.pressSelectAUserButton();
-            preRequestPageAndroid.selectUserWithName(user);
+            preRequestPageAndroid.selectUserWithName(user.trim());
         }else if(device_running.equals("ios")){
             preRequestPageIOS = new PreRequestPageIOS(driver);
             preRequestPageIOS.waitForPageLoad();
             preRequestPageIOS.pressSelectAUserButton();
-            preRequestPageIOS.selectUserWithName(user);
+            preRequestPageIOS.selectUserWithName(user.trim());
         }
     }
 }

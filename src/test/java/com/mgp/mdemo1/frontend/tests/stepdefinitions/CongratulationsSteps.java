@@ -25,9 +25,9 @@ public class CongratulationsSteps extends BasePage {
     @And("User should see the Congratulations message as {string}")
     public void userShouldSeeTheCongratulationsMessageAs(String congraMsg) {
         if(device_running.equals("android")){
-            Assert.assertEquals(congratulationsPageAndroid.getCongratulationsText(), congraMsg);
+            Assert.assertEquals(congratulationsPageAndroid.getCongratulationsText().trim(), congraMsg.trim());
         }else if(device_running.equals("ios")){
-            Assert.assertEquals(congratulationsPageIOS.getCongratulationsText(), congraMsg);
+            Assert.assertEquals(congratulationsPageIOS.getCongratulationsText().trim(), congraMsg.trim());
         }
     }
 }

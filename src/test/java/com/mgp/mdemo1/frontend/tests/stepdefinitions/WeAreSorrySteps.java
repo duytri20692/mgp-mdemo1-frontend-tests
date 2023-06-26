@@ -26,10 +26,10 @@ public class WeAreSorrySteps extends BasePage {
     @And("User should see the message {string}")
     public void userShouldSeeTheMessage(String msg) {
         if(device_running.equals("android")){
-            Assert.assertEquals(weAreSorryPageAndroid.getWeAreSorryTextText(), msg);
+            Assert.assertEquals(weAreSorryPageAndroid.getWeAreSorryTextText().trim(), msg.trim());
         }
         else if(device_running.equals("ios")){
-            Assert.assertEquals(weAreSorryPageIOS.getWeAreSorryTextText(), msg);
+            Assert.assertEquals(weAreSorryPageIOS.getWeAreSorryTextText().trim(), msg.trim());
         }
     }
 }

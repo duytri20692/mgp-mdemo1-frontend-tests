@@ -13,10 +13,10 @@ public class GrossIncomeSteps extends BasePage {
     public void userInputOnGrossIncomeTextBoxWithValueIs(String grossIncome) {
         if(device_running.equals("android")){
             grossIncomePageAndroid = new GrossIncomePage(driver);
-            grossIncomePageAndroid.inputInGrossIncomeTextBox(grossIncome);
+            grossIncomePageAndroid.inputInGrossIncomeTextBox(grossIncome.trim());
         }else if(device_running.equals("ios")){
             grossIncomePageIOS = new GrossIncomePageIOS(driver);
-            grossIncomePageIOS.inputInGrossIncomeTextBox(grossIncome);
+            grossIncomePageIOS.inputInGrossIncomeTextBox(grossIncome.trim());
 //            iosDriver.hideKeyboard();
         }
     }

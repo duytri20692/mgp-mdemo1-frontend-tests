@@ -8,6 +8,8 @@ import org.openqa.selenium.support.FindBy;
 public class SpendPageIOS extends ElementHelper {
     @FindBy(xpath = "//XCUIElementTypeTextField")
     private WebElement spendMoneyTxt;
+    @FindBy(xpath = "//XCUIElementTypeTextField/following-sibling::XCUIElementTypeOther")
+    private WebElement errorMsg;
 
     public SpendPageIOS(AppiumDriver driver) {
         super(driver);
@@ -17,5 +19,10 @@ public class SpendPageIOS extends ElementHelper {
         waitForPresence(driver,10, spendMoneyTxt);
         spendMoneyTxt.clear();
         spendMoneyTxt.sendKeys(money);
+    }
+
+    public String getErrorMsgText(){
+        waitForPresence(driver,10, errorMsg);
+        return errorMsg.getAttribute("label");
     }
 }

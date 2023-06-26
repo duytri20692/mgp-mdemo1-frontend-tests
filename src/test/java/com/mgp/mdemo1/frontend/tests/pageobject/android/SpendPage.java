@@ -8,6 +8,8 @@ import org.openqa.selenium.support.FindBy;
 public class SpendPage extends ElementHelper {
     @FindBy(xpath = "//android.widget.EditText")
     private WebElement spendMoneyTxt;
+    @FindBy(xpath = "//android.widget.EditText/android.view.View")
+    private WebElement errorMsg;
 
     public SpendPage(AppiumDriver driver) {
         super(driver);
@@ -17,5 +19,10 @@ public class SpendPage extends ElementHelper {
         waitForPresence(driver,10, spendMoneyTxt);
         spendMoneyTxt.clear();
         spendMoneyTxt.sendKeys(money);
+    }
+
+    public String getErrorMsgText(){
+        waitForPresence(driver,10, errorMsg);
+        return errorMsg.getAttribute("content-desc");
     }
 }
