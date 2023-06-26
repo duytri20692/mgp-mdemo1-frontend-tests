@@ -1,15 +1,22 @@
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# Env file
+.env
+
 # Ignore files in a specific directory
 **/.idea
-**/target
+.classpath
+.project
+.settings/
 target/
 
 # Ignore specific files
 mgp-mdemo1-frontend-tests.iml
 
 # Ignore files with a specific extension
-*.log
 *.tmp
-*.class
 *.html
-
-.env
