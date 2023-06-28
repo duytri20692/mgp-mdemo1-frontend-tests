@@ -60,11 +60,11 @@ Feature: Submit an invalid application.
 
     Examples:
       | User       | House | Primary | Employed | SingleBuyer | Consent | Spend  | DownPayment | DownPaymentPageErrorMessage |
-      | Test User3 | Y     | Y       | Y        | Y           | Y       | 500000 |             | Please enter a value        |
-      | Test User3 | Y     | Y       | Y        | Y           | Y       | 500000 | abc         | Please enter only numbers   |
-      | Test User3 | Y     | Y       | Y        | Y           | Y       | 500000 | abc123      | Please enter only numbers   |
-      | Test User3 | Y     | Y       | Y        | Y           | Y       | 500000 | 123!@       | Please enter only numbers   |
-      | Test User3 | Y     | Y       | Y        | Y           | Y       | 500000 | 12          | That's little short, mate   |
+      | Test User4 | Y     | Y       | Y        | Y           | Y       | 500000 |             | Please enter a value        |
+      | Test User4 | Y     | Y       | Y        | Y           | Y       | 500000 | abc         | Please enter only numbers   |
+      | Test User4 | Y     | Y       | Y        | Y           | Y       | 500000 | abc123      | Please enter only numbers   |
+      | Test User4 | Y     | Y       | Y        | Y           | Y       | 500000 | 123!@       | Please enter only numbers   |
+      | Test User4 | Y     | Y       | Y        | Y           | Y       | 500000 | 12          | That's little short, mate   |
 
   Scenario Outline: Verify user input invalid data on the Gross Income page.
     Given User go to the PreQualification page and select user as "<User>"
@@ -82,13 +82,13 @@ Feature: Submit an invalid application.
 
     Examples:
       | User       | House | Primary | Employed | SingleBuyer | Consent | Spend  | DownPayment | GrossIncome | GrossIncomePageErrorMessage |
-      | Test User3 | Y     | Y       | Y        | Y           | Y       | 500000 | 400000      |             | Please enter a value        |
-      | Test User3 | Y     | Y       | Y        | Y           | Y       | 500000 | 400000      | abc         | Please enter only numbers   |
-      | Test User3 | Y     | Y       | Y        | Y           | Y       | 500000 | 400000      | abc123      | Please enter only numbers   |
-      | Test User3 | Y     | Y       | Y        | Y           | Y       | 500000 | 400000      | 123!@       | Please enter only numbers   |
-      | Test User3 | Y     | Y       | Y        | Y           | Y       | 500000 | 400000      | 12          | That's little short, mate   |
+      | Test User5 | Y     | Y       | Y        | Y           | Y       | 500000 | 400000      |             | Please enter a value        |
+      | Test User5 | Y     | Y       | Y        | Y           | Y       | 500000 | 400000      | abc         | Please enter only numbers   |
+      | Test User5 | Y     | Y       | Y        | Y           | Y       | 500000 | 400000      | abc123      | Please enter only numbers   |
+      | Test User5 | Y     | Y       | Y        | Y           | Y       | 500000 | 400000      | 123!@       | Please enter only numbers   |
+      | Test User5 | Y     | Y       | Y        | Y           | Y       | 500000 | 400000      | 12          | That's little short, mate   |
 
-  Scenario Outline: Verify user input invalid data on the Gross Income page.
+  Scenario Outline: Verify user input invalid data on the Monthly Expenses page.
     Given User go to the PreQualification page and select user as "<User>"
     When User select answers as "<House>", "<Primary>", "<Employed>" and "<SingleBuyer>"
     Then Click on the Next button
@@ -102,13 +102,13 @@ Feature: Submit an invalid application.
     And Click on the Next button
     And User input on Monthly Expenses text box with value is "<MonthlyExpenses>"
     And Click on the Next button
-    And User should see an error message as "<GrossIncomePageErrorMessage>"
+    And User should see an error message as "<MonthlyExpensesPageErrorMessage>"
 
     Examples:
-      | User       | House | Primary | Employed | SingleBuyer | Consent | Spend  | DownPayment | GrossIncome | MonthlyExpenses | GrossIncomePageErrorMessage |
-      | Test User3 | Y     | Y       | Y        | Y           | Y       | 500000 | 400000      | 80000       |                 | Please enter a value        |
-      | Test User3 | Y     | Y       | Y        | Y           | Y       | 500000 | 400000      | 80000       | abc             | Please enter only numbers   |
-      | Test User3 | Y     | Y       | Y        | Y           | Y       | 500000 | 400000      | 80000       | abc123          | Please enter only numbers   |
-      | Test User3 | Y     | Y       | Y        | Y           | Y       | 500000 | 400000      | 80000       | 123!@           | Please enter only numbers   |
-      | Test User3 | Y     | Y       | Y        | Y           | Y       | 500000 | 400000      | 80000       | 12              | That's little short, mate   |
+      | User       | House | Primary | Employed | SingleBuyer | Consent | Spend  | DownPayment | GrossIncome | MonthlyExpenses | MonthlyExpensesPageErrorMessage |
+      | Test User6 | Y     | Y       | Y        | Y           | Y       | 500000 | 400000      | 80000       |                 | Please enter a value        |
+      | Test User6 | Y     | Y       | Y        | Y           | Y       | 500000 | 400000      | 80000       | abc             | Please enter only numbers   |
+      | Test User6 | Y     | Y       | Y        | Y           | Y       | 500000 | 400000      | 80000       | abc123          | Please enter only numbers   |
+      | Test User6 | Y     | Y       | Y        | Y           | Y       | 500000 | 400000      | 80000       | 123!@           | Please enter only numbers   |
+      | Test User6 | Y     | Y       | Y        | Y           | Y       | 500000 | 400000      | 80000       | 12              | That's little short, mate   |
 
