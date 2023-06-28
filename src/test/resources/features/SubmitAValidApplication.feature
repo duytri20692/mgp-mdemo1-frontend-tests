@@ -2,7 +2,7 @@
 Feature: Submit an application.
 
   Scenario Outline: Verify user can make a payment after login to the system.
-    Given User go to the Prequalification page and select user as "<User>"
+    Given User go to the PreQualification page and select user as "<User>"
     When User select answers as "<House>", "<Primary>", "<Employed>" and "<SingleBuyer>"
     Then Click on the Next button
     And User click on Consent checkbox with value is "<consent>"
