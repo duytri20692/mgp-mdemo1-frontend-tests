@@ -6,5 +6,5 @@
 - Run Regression Test:
    `mvn test -Dcucumber.filter.tags="@RegressionTest"`
 - Run All Test:
-   `mvn clean test -DsuiteXmlFile=testng.xml`
+   `mvn clean test -DsuiteXmlFile="testng.xml"`
   
